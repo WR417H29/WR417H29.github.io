@@ -10,13 +10,18 @@ function item() {
     inp.setAttribute("class", "inp"); // give it a class
     inp.setAttribute("id", `inp${idx}`) // give it a unique id
     inp.setAttribute("placeholder", "Todo - Item"); // give it a placeholder
-    inp.setAttribute("onchange", "replace()"); // give it an onchange function
+    inp.setAttribute("onchange", `replace(inp${idx})`); // give it an onchange function
     item.appendChild(inp); // appending that element onto the div
 
     document.querySelector(".cont").appendChild(item); // appending the div element onto the main div of the website
     idx++; // incrementing the idx to ensure unique IDs
 };
 
-function replace() {
-    console.log("replace mfs be like changed noises")
+function replace(elemID) {
+    let par = elemID.parentElement;
+    let val = elemID.value;
+    let newElem = document.createElement("p");
+    newElem.innerText = val;
+    par.removeChild(elemID);
+    par.appendChild(newElem);
 };
