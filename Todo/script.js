@@ -21,7 +21,25 @@ function replace(elemID) {
     let par = elemID.parentElement;
     let val = elemID.value;
     let newElem = document.createElement("p");
+    newElem.setAttribute("id", `p${idx}`);
+
+    const checkbox = document.createElement("input");
+    checkbox.setAttribute("id", `cb${idx}`);
+    checkbox.setAttribute("type", "radio");
+    checkbox.setAttribute("onClick", `reset(${elemID})`);
+
     newElem.innerText = val;
     par.removeChild(elemID);
+    par.appendChild(checkbox);
     par.appendChild(newElem);
+};
+
+function reset(elemID) {
+    let par = elemID.parentElement;
+    let inp = elemID;
+    console.log(elemID.value);
+
+    // par.removeChild(document.getElementById(pcb[0]));
+    // par.removeChild(document.getElementById(pcb[1]));
+    // par.appendChild(inp);
 };
