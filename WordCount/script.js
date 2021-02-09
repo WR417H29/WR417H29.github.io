@@ -7,7 +7,7 @@ function count() {
     words = text.split(" ").length;
     chars = text.length;
 
-    info.innerText = (`Words: ${words} ${<br/>}  Chars: ${chars}`);
+    info.innerText = (`Words: ${words} \n Chars: ${chars}`);
 
     console.log("Words: " + words);
     console.log("Chars: " + chars);
