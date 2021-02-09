@@ -6,3 +6,11 @@ body {
     background-color: black;
     color: white;
 }
+
+ul {
+    padding: 10px;
+}
+
+li {
+    padding: 10px;
+}
