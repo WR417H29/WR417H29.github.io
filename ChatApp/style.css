@@ -1,0 +1,23 @@
+body {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cont {
+    padding: 0 5vh;
+    padding-bottom: 5vh;
+    color: black;
+    background: pink;
+    display: block;
+    justify-content: center;
+}
+
+#username-disp {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
