@@ -1,5 +1,3 @@
 # WR417H29.github.io
-Website
 
-/ColourChangeButton/index.html
-/Todo/index.html
+This is where I store all of my website projects
